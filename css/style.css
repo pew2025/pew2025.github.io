@@ -39,6 +39,10 @@
     transition: opacity 1s ease-in-out;
 }
 
+.container {
+    padding-top: 16px;
+}
+
 .rsvp.visible,
 .details.visible,
 .maps.visible {
