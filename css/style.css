@@ -1,0 +1,172 @@
+.names .dm-sans {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.names .pinyon-script {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 2.5rem;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+/* Background image for the hero section */
+.hero {
+    background: url('../images/background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ececec;
+    padding: 2rem;
+}
+
+/* Minimalist style for the text */
+.title,
+.subtitle {
+    font-weight: 300;
+    /* color: #ececec */
+}
+
+/* Countdown styling */
+#timer {
+    margin-top: 2rem;
+}
+
+/* RSVP button and details section styling */
+.rsvp,
+.details,
+.maps {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.rsvp.visible,
+.details.visible,
+.maps.visible {
+    opacity: 1;
+}
+
+
+/* Details box styling */
+.details .box,
+.maps .box {
+    color: #313131;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 15px;
+}
+
+/* Smooth scrolling animations */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-body {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hidden elements to be revealed on scroll */
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+    transition: visibility 0s, opacity 1s linear;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    z-index: 1;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    width: inherit;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+body {
+    background-color: #ececec;
+}
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin-bottom: -10px;
+    margin-top: -10px;
+    animation: animate 1.5s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
