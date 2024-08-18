@@ -1,3 +1,8 @@
+nav.is-hidden-tablet{    
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .names .dm-sans {
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
@@ -16,7 +21,8 @@
     background: url('../images/background2.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ececec;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 /* Minimalist style for the text */
@@ -54,7 +60,8 @@
 .details .box,
 .maps .box {
     color: #313131;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin-top: 3rem;
     border-radius: 15px;
 }
