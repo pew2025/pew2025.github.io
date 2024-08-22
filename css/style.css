@@ -46,7 +46,7 @@ nav.is-hidden-tablet{
 }
 
 .container {
-    padding-top: 16px;
+    padding-top: 8px;
 }
 
 .rsvp.visible,
@@ -55,15 +55,19 @@ nav.is-hidden-tablet{
     opacity: 1;
 }
 
+li{
+    margin-left:16px;
+}
 
 /* Details box styling */
 .details .box,
-.maps .box {
+.maps .box,
+.thingstodo .box {
     color: #313131;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-top: 3rem;
-    border-radius: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 16px;
 }
 
 /* Smooth scrolling animations */

@@ -27,10 +27,12 @@ window.addEventListener('scroll', () => {
     const rsvpSection = document.querySelector('.rsvp');
     const mapsSection = document.querySelector('.maps');
     const detailsSection = document.querySelector('.details');
+    const thingstodoSection = document.querySelector('.thingstodo');
 
     const rsvpPosition = rsvpSection.getBoundingClientRect().top;
     const mapsPosition = mapsSection.getBoundingClientRect().top;
     const detailsPosition = detailsSection.getBoundingClientRect().top;
+    const thingstodoPosition = thingstodoSection.getBoundingClientRect().top;
 
     const screenPosition = window.innerHeight / 1.1;
 
@@ -59,5 +61,14 @@ window.addEventListener('scroll', () => {
     else {
         mapsSection.classList.add('hidden');
         mapsSection.classList.remove('visible');
+    }
+
+    if (thingstodoPosition < screenPosition) {
+        thingstodoSection.classList.add('visible');
+        thingstodoSection.classList.remove('hidden');
+    }
+    else {
+        thingstodoSection.classList.add('hidden');
+        thingstodoSection.classList.remove('visible');
     }
 });
